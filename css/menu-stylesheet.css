@@ -1,0 +1,58 @@
+
+html{
+    height: 100%;
+    background-image: linear-gradient(180deg, #8A5797, #1F1377);
+}
+
+
+#menu-bg{
+  width: 550px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#title{
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+
+#assignment-container{
+  margin-top: 50px;
+}
+
+
+#assignment-list{
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  list-style-type: none;
+  column-count: 2;
+}
+
+
+li{
+  padding-top: 10px;
+}
+
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: #261791;
+}
+
+a:hover{
+  color: #9E49A5;
+}
+
+a:active{
+  color: black;
+}
