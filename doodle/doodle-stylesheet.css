@@ -1,0 +1,35 @@
+
+
+
+#container{
+  width: 800px;
+  margin: auto;
+}
+
+
+#g-pendulum{
+  position: relative;
+  top: 100px;
+  left: 113px;
+  z-index: -1;
+  transform-origin: top;
+  transform: rotate(20deg);
+  animation-name: swing;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+#g-pendulum:hover{
+  animation-play-state: running;
+}
+
+@keyframes swing{
+  from{
+    transform: rotate(20deg);
+  }
+  to{
+    transform: rotate(-20deg);
+  }
+
+}
