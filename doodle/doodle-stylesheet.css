@@ -1,35 +1,215 @@
-
-
-
 #container{
   width: 800px;
+  position: relative;
   margin: auto;
+  top: 100px;
 }
 
 
+a{
+  text-decoration: none;
+}
+
+#title{
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #C29580;
+}
+
+#text{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+}
+
+
+#letter-g-big{
+  position: relative;
+  left: 0px;
+  width: 208px;
+  display: inline-block;
+}
+
+
+
+
+#letter-o{
+  position: relative;
+  left: 0px;
+  bottom: -20px;
+  width: 152px;
+  display: inline-block;
+}
+
+#gear-small{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transform-origin: center;
+  animation-name: gear-small-spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+#gear-big{
+  position: relative;
+  top: -52px;
+  left: 52px;
+  transform-origin: center;
+  animation-name: gear-big-spin;
+  animation-duration: 9180ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes gear-small-spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gear-big-spin{
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+#letter-o:hover #gear-small{
+  animation-play-state: running;
+}
+
+#letter-o:hover #gear-big{
+  animation-play-state: running;
+}
+
+
+
+
+
+#letter-g-small{
+  position: relative;
+  left: 10px;
+  bottom: 40px;
+  width: 160px;
+  display: inline-block;
+}
+
+#g-clock{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
 #g-pendulum{
   position: relative;
-  top: 100px;
-  left: 113px;
+  top: 76px;
+  left: -72px;
   z-index: -1;
   transform-origin: top;
   transform: rotate(20deg);
-  animation-name: swing;
+  animation-name: pendulum-swing;
   animation-duration: 2000ms;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-play-state: paused;
 }
 
-#g-pendulum:hover{
-  animation-play-state: running;
-}
-
-@keyframes swing{
+@keyframes pendulum-swing{
   from{
     transform: rotate(20deg);
   }
   to{
     transform: rotate(-20deg);
   }
+}
 
+#letter-g-small:hover #g-pendulum{
+  animation-play-state: running;
+}
+
+
+
+
+#letter-l{
+  position: relative;
+  left: -20px;
+  bottom: 50px;
+  width: 125px;
+  display: inline-block;
+}
+
+#l-minute{
+  position: relative;
+  top: 0px;
+  transform-origin: 10px 113px;
+  animation-name: l-minute;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+#l-hour{
+  position: relative;
+  top: 0px;
+  left: -24px;
+  transform-origin: 10px 84px;
+  transform: rotate(110deg);
+  z-index: -1;
+  animation-name: l-hour;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+@keyframes l-minute{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(110deg);
+  }
+}
+
+@keyframes l-hour{
+  from{
+    transform: rotate(110deg);
+  }
+  to{
+    transform: rotate(150deg);
+  }
+}
+
+#letter-l:hover #l-minute{
+  animation-play-state: running;
+}
+
+#letter-l:hover #l-hour{
+  animation-play-state: running;
+}
+
+
+
+#letter-e{
+  position: relative;
+  left: -60px;
+  bottom: 45px;
+  z-index: -1;
+  width: 105px;
+  display: inline-block;
 }
