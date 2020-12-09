@@ -114,7 +114,7 @@ a{
 #g-pendulum{
   position: relative;
   top: 76px;
-  left: -72px;
+  left: -80px;
   z-index: -1;
   transform-origin: top;
   transform: rotate(20deg);
