@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Listen</title>
+  <link rel="stylesheet" type="text/css" href="haiperku.css">
+</head>
+
+<body id="b-body">
+
+  <div>
+    <img id="b-moon" src="img/b-moon.png">
+  </div>
+
+  <div id="text">
+    <p>listen in the dark</p>
+    <p>echoing call, an answer</p>
+    <p>perched in the tall <a href="haiperku-c.html">tree</a></p>
+  </div>
+
+  <div id="b-forest">
+    <a href="#">
+      <div id="b-owl">
+        <img id="b-owl-body" src="img/b-owl.png">
+        <img id="b-owl-blink" src="img/b-owl-blink.png">
+        <audio id="hoot">
+          <source src="audio/pianofarm-great-horned-owls.mp3"></source>
+          <source src="audio/pianofarm-great-horned-owls.ogg"></source>
+        </audio>
+      </div>
+    </a>
+    <img id="b-trees" src="img/b-tree.png">
+  </div>
+
+
+  <script>
+    var owlSound = document.getElementById("hoot");
+    document.getElementById("b-owl").addEventListener("click", function() { owlSound.play(); });
+  </script>
+
+
+</body>
+
+</html>
