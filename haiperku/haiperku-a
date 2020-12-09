@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Snow</title>
+  <link rel="stylesheet" type="text/css" href="haiperku.css">
+</head>
+
+<body id="a-body">
+
+  <div id="a-snow-containerA">
+  </div>
+
+  <div id="a-snow-containerB">
+  </div>
+
+  <div id="text">
+    <p>white fluttering down</p>
+    <p>dusted across the night sky</p>
+    <p>distant <a href="haiperku-b.html">sounds</a> muffled</p>
+  </div>
+
+  <div>
+    <img id="a-house" src="img/a-house.png">
+  </div>
+
+  <div>
+    <img id="a-trees" src="img/a-tree.png">
+  </div>
+
+  <div id="a-ground">
+  </div>
+
+
+</body>
+
+</html>
