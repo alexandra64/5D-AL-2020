@@ -1,0 +1,300 @@
+html{
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+
+body{
+  height: 100%;
+  margin: 0px;
+}
+
+a:link{
+  color: #EDEDED;
+}
+a:visited{
+  color: #EDEDED;
+}
+a:hover{
+  color: #EDEDED;
+  text-shadow: 0px 0px 3px #EDEDED;
+}
+a:active{
+  color: #EDEDED;
+}
+
+
+#text{
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+  color: #EDEDED;
+  line-height: 18px;
+  position: absolute;
+  top: 500px;
+  left: 400px;
+}
+
+
+
+#a-body{
+  background-image: linear-gradient(180deg, #353761, #777A99);
+}
+
+
+#a-snow-containerA{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("img/snowflakesA.png");
+  animation-name: snowfallA;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+@keyframes snowfallA{
+  from{
+    background-position: 0px 0px;
+  }
+  to{
+    background-position: 450px 450px;
+  }
+}
+
+#a-snow-containerB{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("img/snowflakesB.png");
+  animation-name: snowfallB;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+@keyframes snowfallB{
+  from{
+    background-position: 0px 0px;
+  }
+  to{
+    background-position: 450px 450px;
+  }
+}
+
+
+#a-ground{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #EDEDED;
+}
+
+
+#a-house{
+  position: absolute;
+  bottom: 50px;
+  right: 150px;
+  z-index: -1;
+}
+
+
+#a-trees{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: -1;
+}
+
+
+
+
+#b-body{
+  background-image: linear-gradient(180deg, #6685AA, #283F62);
+}
+
+
+#b-moon{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+
+#b-trees{
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  z-index: -1;
+}
+
+
+#b-owl{
+  position: absolute;
+  top: 230px;
+  right: 440px;
+}
+
+
+#b-owl-blink{
+  position: absolute;
+  transform-origin: top;
+  top: 18px;
+  right: 15px;
+  animation-name: owl-blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+@keyframes owl-blink{
+  from{
+    transform: scaleY(1);
+  }
+  20%{
+    transform: scaleY(0.1);
+  }
+  to{
+    transform: scaleY(0.1);
+  }
+}
+
+
+
+#c-body{
+  background-image: linear-gradient(180deg, #2A4F60, #6793A9);
+}
+
+
+#c-tree{
+  position: absolute;
+  top: 0px;
+  right: 60px;
+}
+
+
+#c-starsA{
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  z-index:-1;
+  opacity: 1;
+  animation-name: c-starsA;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes c-starsA{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+#c-starsB{
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  z-index:-2;
+  opacity: 0;
+  animation-name: c-starsB;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes c-starsB{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+
+#d-body{
+  background-image: linear-gradient(180deg, #2C2C48, #546C8A);
+}
+
+
+#d-starsA{
+  position: absolute;
+  top: 20px;
+  right: 500px;
+  z-index:-1;
+  opacity: 1;
+  animation-name: d-starsA;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes d-starsA{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+#d-starsB{
+  position: absolute;
+  top: 20px;
+  right: 500px;
+  z-index:-2;
+  opacity: 0;
+  animation-name: d-starsB;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes d-starsB{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+#d-ground{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #EDEDED;
+}
+
+
+#d-house1{
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+}
+
+#d-house2{
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
